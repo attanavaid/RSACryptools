@@ -40,6 +40,8 @@ def factor() -> Response:
     'time': round(time_taken, 5)
   })
 
+'''
+
 @api.route('/')
 @cross_origin()
 def serve():
@@ -47,3 +49,5 @@ def serve():
 
 if __name__ == "__main__":
   api.run()
+
+'''
