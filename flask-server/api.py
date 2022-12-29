@@ -10,7 +10,7 @@ from flask_cors import CORS, cross_origin
 from keygen import GENERATE_KEYS
 from factoringMethods import POLLARD_RHO
 
-api = Flask(__name__, static_folder='../factorization-app/build', static_url_path='')
+api = Flask(__name__, static_folder='build', static_url_path='')
 log = logging.getLogger(__name__)
 CORS(api)
 
@@ -40,8 +40,6 @@ def factor() -> Response:
     'time': round(time_taken, 5)
   })
 
-'''
-
 @api.route('/')
 @cross_origin()
 def serve():
@@ -49,5 +47,3 @@ def serve():
 
 if __name__ == "__main__":
   api.run()
-
-'''
