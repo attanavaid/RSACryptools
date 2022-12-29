@@ -40,7 +40,7 @@ def factor() -> Response:
     'time': round(time_taken, 5)
   })
 
-@api.route('/')
+@api.route('/serve')
 @cross_origin()
 def serve():
   return send_from_directory(api.static_folder, 'index.html')
