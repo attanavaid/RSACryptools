@@ -1,0 +1,24 @@
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #303030;
+  margin: 0;
+  padding: 0;
+}
+
+#NavLink {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#NavLink:hover {
+  text-decoration: underline;
+}
+
+#LearnMoreLink {
+  text-decoration: none;
+  color: inherit;
+}
